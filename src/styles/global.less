@@ -1,0 +1,32 @@
+/*less*/
+/*This is how to import*/
+/*variables*/
+@import "variables";
+
+/*This is how to use variables*/
+.text-primary{
+    color:@color-blue;
+}
+.text-secondary{
+    color: @color-teal;
+}
+.text-warning{
+    color: @color-maroon;
+}
+
+/*This is how to mixin and to nest*/
+.border-primary{
+    border:2px solid @color-blue;
+}
+
+table.primary {
+    tbody{
+        tr{
+            td{
+            color:@color-maroon;
+            .border-primary;
+            }
+            
+        }
+    }
+}
